@@ -8,22 +8,60 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+/**
+ 数据源数组
+ */
+@property (nonatomic, strong) NSArray *dataArray;
 @end
+
+static NSString *const kCellIdentifier = @"UITableViewCell";
 
 @implementation ViewController
 
+#pragma mark - View Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    [self initializeDataSource];
+    [self initializeAppreaence];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - InitializeDataSource
+- (void)initializeDataSource {
+    self.dataArray = @[@"OpenGLESEnvironment",
+                       @"DrawTriangle",
+                       @"Shader",
+                       ];
 }
 
+#pragma mark - InitializeAppreaence
+- (void)initializeAppreaence {
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
+}
+
+#pragma mark - TableViewDelegate/dataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
+    cell.textLabel.text = self.dataArray[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *className = self.dataArray[indexPath.row];
+    Class class = NSClassFromString(className);
+    id viewContrlooer = [[class alloc]init];
+    [self.navigationController pushViewController:viewContrlooer animated:YES];
+}
 
 @end
