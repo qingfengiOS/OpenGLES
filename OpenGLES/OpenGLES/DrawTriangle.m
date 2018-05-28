@@ -24,8 +24,6 @@
 - (void)update {
     // 距离上一次调用update过了多长时间，比如一个游戏物体速度是3m/s,那么每一次调用update，
     // 他就会行走3m/s * deltaTime，这样做就可以让游戏物体的行走实际速度与update调用频次无关
-    // NSTimeInterval deltaTime = self.timeSinceLastUpdate;
-    
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {

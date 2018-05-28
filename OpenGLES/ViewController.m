@@ -33,6 +33,7 @@ static NSString *const kCellIdentifier = @"UITableViewCell";
     self.dataArray = @[@"OpenGLESEnvironment",
                        @"DrawTriangle",
                        @"Shader",
+                       @"DrawMoreSahpe",
                        ];
 }
 

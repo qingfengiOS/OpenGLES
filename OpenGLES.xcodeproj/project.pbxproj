@@ -21,6 +21,7 @@
 		FD00DD5320B7A7920000BD2E /* OpenGLESEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = FD00DD5220B7A7920000BD2E /* OpenGLESEnvironment.m */; };
 		FD00DD5620B7A92A0000BD2E /* DrawTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = FD00DD5520B7A92A0000BD2E /* DrawTriangle.m */; };
 		FD00DD5920B7ACE60000BD2E /* Shader.m in Sources */ = {isa = PBXBuildFile; fileRef = FD00DD5820B7ACE60000BD2E /* Shader.m */; };
+		FD3003B220BBFC8300D57A45 /* DrawMoreSahpe.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3003B120BBFC8300D57A45 /* DrawMoreSahpe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		FD00DD5520B7A92A0000BD2E /* DrawTriangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawTriangle.m; sourceTree = "<group>"; };
 		FD00DD5720B7ACE60000BD2E /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
 		FD00DD5820B7ACE60000BD2E /* Shader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shader.m; sourceTree = "<group>"; };
+		FD3003B020BBFC8300D57A45 /* DrawMoreSahpe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawMoreSahpe.h; sourceTree = "<group>"; };
+		FD3003B120BBFC8300D57A45 /* DrawMoreSahpe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawMoreSahpe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				FD00DD5520B7A92A0000BD2E /* DrawTriangle.m */,
 				FD00DD5720B7ACE60000BD2E /* Shader.h */,
 				FD00DD5820B7ACE60000BD2E /* Shader.m */,
+				FD3003B020BBFC8300D57A45 /* DrawMoreSahpe.h */,
+				FD3003B120BBFC8300D57A45 /* DrawMoreSahpe.m */,
 			);
 			path = OpenGLES;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 				FD00DD5620B7A92A0000BD2E /* DrawTriangle.m in Sources */,
 				FD00DD2720B7A4C50000BD2E /* main.m in Sources */,
 				FD00DD5320B7A7920000BD2E /* OpenGLESEnvironment.m in Sources */,
+				FD3003B220BBFC8300D57A45 /* DrawMoreSahpe.m in Sources */,
 				FD00DD4C20B7A73D0000BD2E /* BaseController.m in Sources */,
 				FD00DD1920B7A4C40000BD2E /* AppDelegate.m in Sources */,
 				FD00DD5920B7ACE60000BD2E /* Shader.m in Sources */,
